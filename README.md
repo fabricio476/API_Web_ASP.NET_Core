@@ -17,6 +17,8 @@ passo a passo
    > Models = ( para os modelos )
    
    > Date = ( criar classe AppDbContext - para configurar e representar o db ORM )
+
+   > Controllers = ( para criar a classe controller - entender a classe ControllerBase do pacote AspNetCore.Mvc para adicionar mais funcionalidades a classe ) 
    
  * Definir qual é o banco de dados e a string de conexão (
  
@@ -24,7 +26,26 @@ passo a passo
     
     > pela classe Startup - dentro do metodo  ConfigureServices(IServiceCollection services) - services.AddDbContext<DataContext>
     
-  *  
-   
+  *  Adicionar uma migração ef ao projeto ( sempre que alterar algo criar uma migração nova )
+  
+    > comando cli = dotnet ef migrations add InitialCreation
+  
+    > comando cli = dotnet ef database update - atualizar o banco ( primeira vez se for sqlite vai criar o arquivo do banco )
+  
+   * Adicionar a configuração da classe controller no metodo ConfigureServices da classe startup
+  
+       > services.AddControllers(); //adiciona o MVC
+  
+  * Adicionar o endipoint para os metodos da classe controller
+  
+      > endpoints.MapControllerRoute(name: "default", pattern: "{controller=Home}/{action=Index}/{id?}"); ou
+  
+      > endpoints.MapControllers();
             
+  
+  * Adicionar as actions do controller
+  
+    > listar, update, delete, create .etc
+  
+  
    
