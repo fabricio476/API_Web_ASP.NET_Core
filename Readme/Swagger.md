@@ -1,4 +1,6 @@
-### Swagger
+### Swagger 
+
+[Documentação de APIs com Swagger]( https://medium.com/tableless/documenta%C3%A7%C3%A3o-de-apis-com-swagger-no-asp-net-core-e7bc3caa9185/ )
 
  
 
