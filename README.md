@@ -3,7 +3,7 @@ Projetos de aplicativos ASP.NET Core para serviços HTTP RESTful e ASP.NET Core 
 
 passo a passo
 
-* criar projeto terminal [ dotnet new web -o nomeProjeto -f net5.0 ] -f =para indicar a versão
+* criar projeto terminal [ dotnet new web -o nomeProjeto -f net5.0 ] -f =para indicar a versão ou dotnet new webapi --name nomeProjeto -f net5.0
    >classe Startup.cs = classe de configuração
   
    >classe Program.cs = classe que starta o servidor
