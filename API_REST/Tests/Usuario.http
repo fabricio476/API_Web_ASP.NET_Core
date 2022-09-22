@@ -1,0 +1,19 @@
+### https://localhost:5001/
+
+### Listar os funcionários
+GET https://localhost:5001/api/usuario/listar
+
+
+
+### Cadastrar um funcionário
+POST https://localhost:5001/api/usuario/cadastrar
+Content-Type: application/json
+
+{
+  "nome" : "fabricio",
+  "email" : "fabricio@gmail.com",
+  "senha" : "123456"
+}
+
+
+
